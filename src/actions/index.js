@@ -9,6 +9,9 @@ export function loadColor() {
                   console.log('Success: ' + newColor);
 
                   dispatch(changeColor(newColor));
+                })
+                .catch(error => {
+                  console.log('Error: ' + error);
                 });
   };
 };
